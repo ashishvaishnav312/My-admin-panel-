@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- jQuery CDN -->
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h2>Ashish Tech</h2>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Search here" class="search-input">
+                <i class="fa fa-search" style="position: absolute; top: 15px; right: 20px;"></i>
+            </div>
+
+            <i class="fa fa-bell"></i>
+            <div class="user">
+                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="">
+            </div>
+        </div>
+
+
+        <div class="sidebar">
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fa-solid fa-box"></i></div>
+                    <div class="menu-1">Dashboard</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="menu-1">Students</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="menu-1">Teachers</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <div class="menu-1">Employees</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="menu-1">Analytics</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fa-solid fa-coins"></i></div>
+                    <div class="menu-1">Earnings</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                    <div class="menu-1">Setting</div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menus">
+                    <div class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+                    <div class="menu-1">Help</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" data-count="1215">0</div>
+                        <div class="card-name">Students</div>
+                    </div>
+
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" data-count="50">0</div>
+                        <div class="card-name">Teachers</div>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" data-count="200">0</div>
+                        <div class="card-name">Employee</div>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa-sharp fa-solid fa-users"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number" data-count="4500">0</div>
+                        <div class="card-name">Earnings</div>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="charts">
+                <div class="chart">
+                    <h2>Earnings (Past 12 Month)</h2>
+                    <div>
+                        <canvas id="linechart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart" id="doughnut-chart">
+                    <h2 class="text">Employees</h2>
+                    <div>
+                        <canvas id="doughnut"></canvas>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- js -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="js/chart.js"></script>
+            <script src="js/doughnut.js"></script>
+            <script src="counter.js"></script>
+        </div>
+    </div>
+</body>
+</html>
